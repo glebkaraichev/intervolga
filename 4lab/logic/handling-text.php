@@ -624,7 +624,7 @@ function russian_rules($dom)
         @$dom->loadHTML('<div>' . $html .  '</div>', LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
         $dom->preserveWhiteSpace = false;
 
-        $html = preg_replace("/^,] \\bа\\b/u", ", а ", $html);
+        $html = preg_replace("/[^,] \\bа\\b/u", ", а ", $html);
         $html = preg_replace("/[^,] \\bно\\b/u", ", но ", $html);
         $html = str_replace("...", "…", $html);
         echo $html;
