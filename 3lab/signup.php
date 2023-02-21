@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) { // если нажата кнопка с ключ
             $_SESSION['message'] = implode('', $err);
             header("Location: registration.php");
         }
-        $stmt = $connect->prepare("SELECT * FROM users WHERE email1 =:email1"); // достаем столбец email из таблицы пользователей чтобы в дальнейшем проверить есть ли такой пользователь в таблице или нет
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE email1 =:email1"); // достаем столбец email из таблицы пользователей чтобы в дальнейшем проверить есть ли такой пользователь в таблице или нет
         $stmt->bindValue('email1', $email1, PDO::PARAM_STR);
         $stmt->execute();
         $check_user = $stmt->fetchAll();
@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) { // если нажата кнопка с ключ
 
         if (count($err) == 0) {
 
-            $stmt = $connect->prepare("INSERT INTO users(email1, password1, full_name, birthday_date, address, sex, interests, vklink, blood_type, rh_factor) VALUES(:email1, :password1, :full_name, :birthday_date, :address, :sex, :interests, :vklink, :blood_type, :rh_factor)");
+            $stmt = $pdo->prepare("INSERT INTO users(email1, password1, full_name, birthday_date, address, sex, interests, vklink, blood_type, rh_factor) VALUES(:email1, :password1, :full_name, :birthday_date, :address, :sex, :interests, :vklink, :blood_type, :rh_factor)");
             $stmt->bindValue('email1', $email1, PDO::PARAM_STR);
             $stmt->bindValue('password1', $password1, PDO::PARAM_STR);
             $stmt->bindValue('full_name', $full_name, PDO::PARAM_STR);
