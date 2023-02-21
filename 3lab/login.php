@@ -9,7 +9,7 @@ $password1 = md5($_POST["password1"]); // хешируем пароль пост
 
 if (isset($_POST['submit'])) { // если нажата кнопка с ключём отправить
 
-    $stmt = $connect->prepare("SELECT * FROM users WHERE email1= :email1 AND password1= :password1"); // выбираем из таблицы пользователи поля имейл и пароль
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE email1= :email1 AND password1= :password1"); // выбираем из таблицы пользователи поля имейл и пароль
     $stmt->bindValue('email1', $email1, PDO::PARAM_STR); // делаем защиту от sql инъекций
     $stmt->bindValue('password1', $password1, PDO::PARAM_STR);// делаем защиту от sql инъекций
     $stmt->execute(); // выполняем запрос
