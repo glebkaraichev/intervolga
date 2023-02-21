@@ -1,0 +1,52 @@
+.icon{
+    width: 20px;
+    height: 20px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn--diamonds{
+    background-image: url('../img/diamonds.jpg');
+    width: 200px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn--sklv{
+    background-image: url('../img/SKLV.jpg');
+    width: 120px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-group li{
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+.slider-group li img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.tags span{
+    font-size: 11px; 
+}
+.fs-7{
+    font-size: 14px;
+}
+.fs-8{
+    font-size: 12px;
+}
+.rew-block img{
+    border-radius: 25px;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.social{
+    width: 24px; 
+    height: 24px;
+}

@@ -1,0 +1,83 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap10down {
+    gap: 10px;
+}
+
+.gap10 {
+
+    gap: 10px;
+}
+
+.goods-navbar a {
+    color: rgb(60, 60, 60);
+}
+
+.nav-item-subdirectory {
+    height: 45px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-item-subdirectory:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav.g > :last-child {
+    margin-left: auto;
+}
+
+.hoverunderline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.class > :last-child {
+    margin-left: auto;
+}
+
+
+.cont1 {
+    height: 150px;
+    display: flex;
+    width: 100%;
+}
+
+.navj1 {
+    align-items: center;
+    width: 100%;
+}
+
+.navi1 {
+    gap: 60px;
+    font-weight: bold;
+}
+
+.img1 {
+    width: 180px;
+    height: 56px;
+}
+.loginP{
+
+}
+
