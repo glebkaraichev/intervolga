@@ -13,16 +13,16 @@
         <nav class="col-1 nav flex-column">
             <i class="bi bi-arrow-up mx-auto fs-4 text-secondary"></i>
             <ul class="list-group slider-group mx-auto">
-                <li class="list-group-item"><img src="../img/sl-1.jpg" alt=""></li>
-                <li class="list-group-item"><img src="../img/sl-2.jpg" alt=""></li>
-                <li class="list-group-item"><img src="../img/sl-3.jpg" alt=""></li>
-                <li class="list-group-item"><img src="../img/sl-4.jpg" alt=""></li>
-                <li class="list-group-item"><img src="../img/sl-5.jpg" alt=""></li>
+                <li class="list-group-item"><img src="./img/sl-1.jpg" alt=""></li>
+                <li class="list-group-item"><img src="./img/sl-2.jpg" alt=""></li>
+                <li class="list-group-item"><img src="./img/sl-3.jpg" alt=""></li>
+                <li class="list-group-item"><img src="./img/sl-4.jpg" alt=""></li>
+                <li class="list-group-item"><img src="./img/sl-5.jpg" alt=""></li>
             </ul>
             <i class="bi bi-arrow-down mx-auto fs-4 text-secondary"></i>
         </nav>
         <div class="col-5">
-            <img src="../img//sl-1.jpg" alt="">
+            <img src="./img//sl-1.jpg" alt="">
         </div>
         <div class="col-3 d-flex flex-column">
             <div class="reviews d-flex">
